@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simone Rodrigues - Confeitos Artesanais | Zona Oeste - RJ</title>
+    <meta name="description" content="Bolos, docinhos e sobremesas artesanais feitas com amor na Zona Oeste do Rio de Janeiro. Pronta entrega e encomendas personalizadas.">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="figma:asset/66f61a87284e70e04606aeab821852490316298c.png" alt="Simone Rodrigues Confeitos">
+                    <div class="logo-text">
+                        <h1 class="font-serif">Simone Rodrigues</h1>
+                        <p>Confeitos Artesanais</p>
+                    </div>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
+                    <a href="https://wa.me/5521985328301" target="_blank" class="btn-primary">Fazer Pedido</a>
+                </nav>
+
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home" onclick="toggleMenu()">Início</a>
+                <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+                <a href="#produtos" onclick="toggleMenu()">Produtos</a>
+                <a href="#servicos" onclick="toggleMenu()">Serviços</a>
+                <a href="#contato" onclick="toggleMenu()">Contato</a>
+                <a href="https://wa.me/5521985328301" target="_blank" class="btn-primary">Fazer Pedido</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        ✨ 2 Anos Adoçando Vidas no Rio de Janeiro
+                    </div>
+                    <h2 class="font-serif">Sabor e Amor em Cada Receita</h2>
+                    <p>Bolos, docinhos e sobremesas artesanais feitas com ingredientes premium na Zona Oeste do Rio de Janeiro. Pronta entrega e encomendas personalizadas.</p>
+                    
+                    <div class="features">
+                        <div class="feature-badge">
+                            <span>🛍️</span>
+                            <span>Pronta Entrega</span>
+                        </div>
+                        <div class="feature-badge">
+                            <span>📦</span>
+                            <span>Sob Encomenda</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5521985328301" target="_blank" class="btn-large">
+                            <span>📞</span>
+                            <span>Pedir no WhatsApp</span>
+                        </a>
+                        <a href="https://instagram.com/confeitossimone" target="_blank" class="btn-secondary">
+                            <span>📷</span>
+                            <span>Ver Instagram</span>
+                        </a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span>⭐</span>
+                            <span><strong>5.0</strong> (150+ avaliações)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span>❤️</span>
+                            <span>300+ clientes felizes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="figma:asset/cd6c2f56555deb3fd3a1345f38d0212377da7380.png" alt="Bolo Confeitos Simone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="font-serif">Conheça a Simone Rodrigues</h3>
+                <p>Com 2 anos de dedicação na confeitaria artesanal, Simone Rodrigues transforma ingredientes simples em momentos inesquecíveis. Localizada na Zona Oeste do Rio de Janeiro, cada receita é preparada com amor e atenção aos detalhes.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <span style="font-size: 32px;">❤️</span>
+                    </div>
+                    <h4>Feito com Amor</h4>
+                    <p>Cada doce e bolo é preparado artesanalmente com dedicação e paixão para tornar seu momento especial.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <span style="font-size: 32px;">⭐</span>
+                    </div>
+                    <h4>Ingredientes de Qualidade</h4>
+                    <p>Selecionamos apenas ingredientes frescos e de primeira qualidade para garantir o melhor sabor.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <span style="font-size: 32px;">📍</span>
+                    </div>
+                    <h4>Zona Oeste - RJ</h4>
+                    <p>Atendemos toda a Zona Oeste do Rio de Janeiro com entrega rápida e produtos sempre fresquinhos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" style="background: linear-gradient(to bottom, white, #FAF8F5);">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="font-serif">Nossos Produtos</h3>
+                <p>Uma variedade deliciosa de bolos, docinhos e sobremesas para todos os momentos</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Bolo de Pote -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/811b217041c7443459c7f51b335916105908880b.png" alt="Bolo de Pote">
+                        <div class="product-badge">⭐ Destaque</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Bolo de Pote</h4>
+                        <p>Deliciosos bolos em potinhos individuais, perfeitos para qualquer ocasião.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bolo de Aniversário -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/233f408b55f85be5845e35bb877f0caa7f650696.png" alt="Bolo de Aniversário">
+                        <div class="product-badge">⭐ Destaque</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Bolo de Aniversário</h4>
+                        <p>Bolos personalizados para tornar seu aniversário inesquecível.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brigadeiro Gourmet -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/8062c6a5d511b070d9992f12538abc1a0ea35726.png" alt="Brigadeiro Gourmet">
+                        <div class="product-badge">🍫 Docinhos</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Brigadeiro Gourmet</h4>
+                        <p>Brigadeiros tradicionais e especiais em diversos sabores irresistíveis.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brigadeiro de Ninho -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/41a81a60e9d321cd13e706fd40a0701658d98b54.png" alt="Brigadeiro de Ninho">
+                        <div class="product-badge">🍫 Docinhos</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Brigadeiro de Ninho</h4>
+                        <p>Leite em pó de Ninho, feitos com muito carinho.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copo da Felicidade -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/110bf50d18557cb1fa9c6bf7269c80200888fc17.png" alt="Copo da Felicidade">
+                        <div class="product-badge">✨ Especial</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Copo da Felicidade</h4>
+                        <p>Sobremesas em copinhos com camadas de brigadeiro, paçoca e muito mais.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bolo na Travessa -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/bc91b4d17256cf66b508d27a0bbadb4285393f2a.png" alt="Bolo na Travessa">
+                        <div class="product-badge">✨ Especial</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Bolo na Travessa</h4>
+                        <p>Bolos deliciosos na travessa, perfeitos para compartilhar com a família.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tortas -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/5ed7eade012eb6d973b455dfe3e38b9c97cfea20.png" alt="Tortas">
+                        <div class="product-badge">✨ Especial</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Tortas</h4>
+                        <p>Tortas artesanais doces e salgadas para todas as ocasiões.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini Bolo Vulcão -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="figma:asset/6178e41c35cb1655f9e43070fb98951113dd65b4.png" alt="Mini Bolo Vulcão">
+                        <div class="product-badge">✨ Especial</div>
+                    </div>
+                    <div class="product-content">
+                        <h4>Mini Bolo Vulcão</h4>
+                        <p>Mini bolos com recheio cremoso que derrete na boca.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Sob consulta</span>
+                            <a href="https://wa.me/5521985328301" target="_blank" class="product-link">
+                                Pedir <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="font-serif">Como Funcionam Nossos Serviços</h3>
+                <p>Oferecemos duas modalidades para melhor atender você</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span style="font-size: 32px; color: white;">🛍️</span>
+                    </div>
+                    <h4>Pronta Entrega</h4>
+                    <p>Produtos selecionados disponíveis para retirada imediata ou entrega rápida na Zona Oeste do Rio de Janeiro.</p>
+                    <ul class="service-list">
+                        <li>
+                            <span>→</span>
+                            <span>Bolos de pote</span>
+                        </li>
+                        <li>
+                            <span>→</span>
+                            <span>Docinhos tradicionais</span>
+                        </li>
+                        <li>
+                            <span>→</span>
+                            <span>Trufas e copinhos</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5521985328301" target="_blank" class="btn-white">Consultar Disponibilidade</a>
+                </div>
+
+                <div class="service-card purple">
+                    <div class="service-icon">
+                        <span style="font-size: 32px; color: white;">📦</span>
+                    </div>
+                    <h4>Sob Encomenda</h4>
+                    <p>Personalize completamente seu pedido para aniversários, chás revelação e eventos especiais.</p>
+                    <ul class="service-list">
+                        <li>
+                            <span>→</span>
+                            <span>Bolos personalizados</span>
+                        </li>
+                        <li>
+                            <span>→</span>
+                            <span>Chá revelação</span>
+                        </li>
+                        <li>
+                            <span>→</span>
+                            <span>Kits personalizados</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5521985328301" target="_blank" class="btn-white">Fazer Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h3 class="font-serif">Pronto para Adoçar seu Dia?</h3>
+            <p>Entre em contato agora pelo WhatsApp e faça seu pedido</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5521985328301" target="_blank" class="btn-white-solid">
+                    <span>📞</span>
+                    <span>Fazer Pedido Agora</span>
+                </a>
+                <a href="https://instagram.com/confeitossimone" target="_blank" class="btn-white-outline">
+                    <span>📷</span>
+                    <span>Seguir no Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="font-serif">Entre em Contato</h3>
+                <p>Estamos prontos para atender você e tornar seu evento ainda mais especial</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span style="font-size: 28px; color: #B8986A;">📞</span>
+                    </div>
+                    <h4>WhatsApp</h4>
+                    <a href="https://wa.me/5521985328301" target="_blank">+55 21 98532-8301</a>
+                    <p>Clique para conversar</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span style="font-size: 28px; color: #B8986A;">📷</span>
+                    </div>
+                    <h4>Instagram</h4>
+                    <a href="https://instagram.com/confeitossimone" target="_blank">@confeitossimone</a>
+                    <p>Veja nossos trabalhos</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span style="font-size: 28px; color: #B8986A;">📍</span>
+                    </div>
+                    <h4>Localização</h4>
+                    <p style="font-weight: 500; color: #4b5563;">Zona Oeste</p>
+                    <p>Rio de Janeiro, RJ</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <div class="hours-badge">
+                    <div class="hours-content">
+                        <span>🕐</span>
+                        <span>Atendimento: Segunda a Sábado | 9h às 19h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="figma:asset/66f61a87284e70e04606aeab821852490316298c.png" alt="Simone Rodrigues Confeitos">
+                        <div>
+                            <h1 class="font-serif" style="color: #B8986A; font-size: 1.25rem;">Simone Rodrigues</h1>
+                            <p style="font-size: 0.75rem; color: #9ca3af;">Confeitos Artesanais</p>
+                        </div>
+                    </div>
+                    <p style="color: #9ca3af;">Doces e bolos artesanais feitos com amor na Zona Oeste do Rio de Janeiro há 2 anos.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li style="color: #9ca3af; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>📞</span>
+                            <span>+55 21 98532-8301</span>
+                        </li>
+                        <li style="color: #9ca3af; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>📷</span>
+                            <span>@confeitossimone</span>
+                        </li>
+                        <li style="color: #9ca3af; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>📍</span>
+                            <span>Zona Oeste - Rio de Janeiro, RJ</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Simone Rodrigues Confeitos. Todos os direitos reservados.</p>
+                <p style="font-size: 0.875rem;">Feito com ❤️ e muito chocolate | 2 anos adoçando vidas</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
